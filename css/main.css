@@ -1,0 +1,317 @@
+/* main styling sheet for final exam */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.logo {
+  width: auto;
+  height: 40px;
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 285px;
+}
+
+header {
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-bottom: 0.5px solid #CECDC9;
+}
+
+.nav_icons {
+  list-style: none;
+  margin-right: 300px;
+}
+
+a:link {
+    color: #262626;
+}
+
+a:visited {
+    color: #262626;
+}
+
+.nav_icons li {
+  display: inline-block;
+  padding: 0px 7px; /* nav button separator */
+}
+
+.nav_icons li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_icons li a:hover {
+  color: #0088a9;
+}
+
+.nav_icons img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* STYLE FOR SEARCH BOX ONLY */
+.input {
+  width: 200px;
+  height: 9px;
+  border: 1px solid #676558;
+  opacity: 65%;
+  background: transparent;
+  padding: 10px 20px; /* space for search box */
+  border-radius: 50px;
+  outline: none;
+  font-size: 15px;
+  color: #585858;
+  font-weight: medium;
+  letter-spacing: 1px; 
+}
+
+.wrapper {
+  margin-left: 8%;
+}
+
+::-webkit-input-placeholder {
+  color: #585858;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+
+}
+
+.close-btn {
+  position: absolute;
+  top: 13px;
+  left: 840px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #676558;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.close-btn.active {
+  opacity: 1;
+  animation: animate 0.5s linear;
+}
+
+/* animation zoom in and zoom out effects */
+@keyframes animate {
+  0%{
+      transform: scale(1);
+  }
+  25%{
+      transform: scale(1.2);
+  }
+  50%{
+      transform: scale(1.5);
+  }
+  75%{
+      transform: scale(1.2);
+  }
+  100%{
+      transform: scale(1);
+  }
+} 
+/* END OF SEARCHBOX STYLE */
+
+/* -----------------------------------------------------------------------------------------*/
+
+/* THIS SECTION IS FOR IG POSTS */
+.instapost {
+  top: 45px;
+  margin-left: 18.5%;
+  padding-top: 45px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  }
+.card {
+  /* 
+  margin: 0 auto; <---- for Center the elements
+  */
+  background-color: #fff;
+  width: 615px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.card-header {
+  padding: 10px 15px 15px 15px;
+}
+
+.profile-image img {
+    display: inline-block;
+    height: 33px;
+    width: 33px;
+    position: relative;
+    top: 3px;
+    margin-right: 15px;
+    float: left;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.profile-image img {
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  padding: 1.5px;
+}
+
+.profile-info {
+    display: inline-block;
+    padding-top: 4px;
+}
+
+.location {
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 11px;
+    color: 111;
+    cursor: pointer;
+}
+.name {
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 14px;
+    color: 111;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button_right { 
+    font-size: 12px;
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
+.content-img img {
+  width: 100%;
+}
+
+.likes {
+  font-family: 'Open Sans', Sans-serif;
+  font-weight: bold;
+  color: #262626;
+  font-size: 13px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.futa {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  letter-spacing: 4px;
+  font-size: 23px;
+  cursor: pointer;
+  color: #343434;
+}
+
+.bookmark {
+  float: right;
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+  top: 0;
+}
+
+.bookmark i {
+  font-size: 30px;
+}
+
+.description {
+  font-family: 'Open Sans', Sans-serif;
+  font-size: 13px;
+  margin: 0;
+  color:#262626;
+}
+
+.description span {
+  font-weight: bold;
+  color:#262626;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.card-footer {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.comments {
+  font-family: 'Open Sans', Sans-serif;
+  font-size: 13px;
+  margin: 0;
+  color:#262626;
+}
+
+.comments span {
+  font-weight: bold;
+  color:#262626;
+  cursor: pointer;
+}
+
+.form {
+  display: inline-block;
+}
+
+.add-comments {
+  display: inline-block;
+  padding-left: 0px;
+}
+
+.time {
+  font-family: 'Open Sans', Sans-serif;
+  font-size: 11px;
+  margin: 0;
+  color:#262626;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  opacity: 70%;
+  font-weight: medium;
+}
+
+input {
+  width: 335%;
+  height: 30px;
+  padding-left: 13px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 14px;
+  border: 0px solid #000;
+  font-family: 'Roboto', sans-serif;
+  outline: 0;
+  display: flex;
+  opacity: 70%;
+  letter-spacing: normal;
+}
+
+input {
+  border-top: 0.5px solid #CECDC9;
+}
+
+.post-button {
+  display: inline-block;
+  float: right;
+  top: 18px;
+  right: 13px;
+  position: relative;
+  font-family:'Open Sans', Sans-serif;
+  font-weight: bold;
+  color: #87b5ff;
+  font-size: 15px;
+  cursor: pointer;
+}
