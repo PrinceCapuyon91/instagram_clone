@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FinalExam</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Prince Patrick">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/secondary.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script>
+		$(document).ready(function(){ /* JQuery for search close button, thanks to my friend */
+			$(".input").focus(function(){
+				$(".close-btn").addClass("active");
+			});
+
+			$(".input").focusout(function(){
+				$(".close-btn").removeClass("active");
+				$(this).val("");
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+	<header>
+		<img class="logo" src="./img/logo.png" alt="main_logo">
+			<div class="wrapper">
+  				<div class="container">
+    				<input type="text" class="input" placeholder="Search">
+    			<div class="close-btn">&times;</div>
+  			</div>
+		</div>
+
+		<nav>
+			<ul class="nav_icons">
+				<li><a href="#"><i class="material-icons" style="font-size: 25px">home</i></a></li>
+				<li><a href="#"><i class="material-icons "style="font-size: 25px">message</i></a></li>
+				<li><a href="#"><i class="material-icons" style="font-size: 25px">explore</i></a></li>
+				<li><a href="#"><i class="material-icons" style="font-size: 25px">favorite_border</i></a></li>
+				<li><img src="./img/DP.jpg"></li>
+			</ul>
+		</nav>
+	</header>
+
+<!-- END OF HEADER SECTION -->
+
+<!-- START OF INSTAPOST -->
+
+	<section class="instapost">
+		<div class="card">
+			<div class="card-header">
+				<div class="profile-image">
+					<img src="./img/DP.jpg">
+				</div>
+				<div class="profile-info">
+					<div class="name">littleprinceme</div>
+					<div class="location">Queens, New York</div>
+				</div>
+
+				<div class="button_right"> <!-- CHANGE THIS TO 3DOTS BUTTON -->
+					<a href="#"><i class="material-icons" style="font-size: 20px">more_horiz</i></a>
+				</div>
+			</div>
+
+			<div class="content-img">
+				<img src="./img/galaxy.jpg">
+			</div>
+
+			<div class="futa">
+				<i class="far fa-heart"></i>
+				<i class="far fa-comment"></i>
+				<i class="fab fa-telegram-plane"></i>
+
+				<div class="bookmark">
+					<i class="material-icons">bookmark_border</i>
+				</div>
+			</div>
+
+
+			<div class="card-footer">
+			<div class="likes">
+				1,326 likes
+			</div>
+			<div class="description">
+				<p>
+					<span>littleprinceme</span> A Picture of a Galaxy from my Advance Camera!
+				</p>
+			</div>
+			<div class="comments">
+				<p>
+					<span>Tony Stark</span> I saw this when we're in space! love it 3000!
+				</p>
+				<p>
+					<span>Dr. Strange</span> Yes when Thanos kicked your ass LOL!
+				</p>
+			</div>
+		<div class="time">
+			<p>5 minutes ago</p>
+		</div>	
+			</div>
+				
+				<form>
+				<div class="add-comments">
+					<input type="text" placeholder="Add a comment..." />
+				</div>
+				<div class="post-button">Post</div>
+				</form>
+		</div>
+	</section>
+
+		<!-- END OF INSTAPOST -->
+
+		<!-- START OF SIDE ELEMENTS -->
+
+			<!-- RIGHT PROFILE PIC & INFO -->
+	<section class="side-elements">
+		<div class="card2">
+			<div class="card2-header">
+				<div class="side-dp">
+					<img src="./img/DP.jpg">
+				</div>
+				<div class="side-info">
+					<div class="side-name">littleprinceme</div>
+					<div class="user-title">Prince Patrick I. Capuyon (Web Designer)</div>
+				</div>
+			</div>
+		</div>
+	</section>
+			<!-- END OF RIGHT PROFILE PIC & INFO -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+			
+			<!--  START OF SIDE SECTION TOP -->
+
+				<section class="side-elements3">
+					<div class="card3"> <!--MAIN BOX -->
+						<div class="card3_header">
+							<div class="stories">Stories</div>
+							<div class="watch_all">Watch All</div>
+						</div>
+							<!-- 1 -->	
+							<div class="side3_style">
+								<div class="side3-dp">
+									<img src="./img/tony.png">
+								</div>
+									<div class="side3-info">
+										<div class="side3-name">Tony Stark</div>
+										<div class="user3-time">5 MINUTES AGO</div>
+									</div>
+								</div>
+							<!-- 2 -->
+							<div class="side3_style">
+								<div class="side3-dp">
+									<img src="./img/nick.jpg">
+								</div>
+									<div class="side3-info">
+										<div class="side3-name">Awesome Nick Fury</div>
+										<div class="user3-time">13 MINUTES AGO</div>
+									</div>
+							</div>
+							<!-- 3 -->
+							<div class="side3_style">
+								<div class="side3-dp">
+									<img src="./img/NASA2.jpg">
+								</div>
+									<div class="side3-info">
+										<div class="side3-name">NASA Space Agency</div>
+										<div class="user3-time">26 MINUTES AGO</div>
+									</div>
+							</div>
+					</div>
+				</section>
+
+				<!--  START OF SIDE SECTION BOTTOM -->
+
+				<section class="side-elements4">
+					<div class="card4"> <!--MAIN BOX -->
+						<div class="card4_header">
+							<div class="stories">Suggestions For You</div>
+							<div class="see_all">See All</div>
+						</div>
+
+
+							<div class="last_drop">
+							<div class="follows">Follow</div>
+							<div class="follows">Follow</div>
+							<div class="follows">Follow</div>
+							</div>
+
+							<!-- 1 -->	
+							<div class="side3_style">
+								<div class="side4-dp">
+									<img src="./img/wanda.jpg">
+								</div>
+									<div class="side4-info">
+										<div class="side4-name">Wanda Maximoff</div>
+										<div class="user4-follow">Followed by Hawkeye + ...</div>
+									</div>
+								</div>
+							<!-- 2 -->
+							<div class="side4_style">
+								<div class="side4-dp">
+									<img src="./img/valkyrie.jpg">
+								</div>
+									<div class="side4-info">
+										<div class="side4-name">Valkyrie</div>
+										<div class="user4-follow">Followed by Thor, Ant + ...</div>
+									</div>
+							</div>
+							<!-- 3 -->
+							<div class="side4_style">
+								<div class="side4-dp">
+									<img src="./img/gamora.jpg">
+								</div>
+									<div class="side4-info">
+										<div class="side4-name">Gamora</div>
+										<div class="user4-follow">Follows you</div>
+									</div>
+							</div>
+
+						<div class="main_footer">
+							<div class="footer1">About • Help • Press • API • Jobs • Privacy • Terms</div>
+							<div class="footer2">Locations • Top Accounts • Hashtags • Language</div>
+							<div class="footer3">&copy; PRINCE FINAL EXAM 2020</div>
+						</div>
+
+					</div>
+				</section>
+</body>
+</html>
